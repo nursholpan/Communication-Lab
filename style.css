@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #DBE9DF;
+  margin:0px;
+  padding: 0px;
+  font-family: times;
+}
+
+/*-----------------------------------------
+  NAVIGATION BAR STYLING            
+-------------------------------------------*/
+.Menu {
+  display: flex;
+  align-items: right; 
+  justify-content: right; 
+  position: fixed; 
+  height:6% ;
+  width: 100%;
+  padding: 0; 
+  font-family: calibri;
+  transition: background-color 0.3s;
+}
+.Menu.scrolled {
+  background-color: #DBE9DF;
+}
+.Menu a:hover {
+  background-color: #244230;
+  padding: 13px;  
+}
+
+li {
+  display: inline-block; 
+  margin-left: 0;
+}
+li a{
+  color: black;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+
+/*-----------------------------------------
+  HERO SECTION aka FIRST CONTENT STYLING            
+-------------------------------------------*/
+.Hero-Section {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; /*justifies the content to the centere vertically */
+  padding-right: 10px; /*for some gap from the right */ 
+  height: 100vh;
+  background-image: url(peace.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  background-attachment: fixed;
+  color: white;
+  font-size: 42px;
+  padding-left: 30px;
+  margin-top: 33%;
+}
+
+/*-----------------------------------------
+  SUB-HERO SECTION STYLING            
+-------------------------------------------*/
+.Intro {
+  justify-content: center;
+  align-items: center;
+  color: #244230;
+  margin: 30px;
+  padding: 30px;
+}
+.Intro h2 {
+  font-family: cursive;
+  font-size: 3rem;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+p {
+  padding-left: 20%;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+/*-----------------------------------------
+ SECOND CONTENT STYLING            
+-------------------------------------------*/
+.SecondContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  background-color: #405A4F;
+  color: white;
+  padding-top: 0;
+
+}
+.video-title {
+  padding-top: 80px;
+  background-color:#405A4F;
+  text-align: center;
+  font-size: 3rem;
+  font-family: initial;
+  color: white;
+  margin: 2rem 0; 
+  margin-bottom: 0;
+}
+
+.SecondContent h3 {
+  font-family: monospace;
+  padding-top: 10%;
+  flex: 1;
+  word-spacing: 12px;  
+  font-size: 25px;
+}
+iframe {
+  margin: 50px;
+  justify-content: center;
+
+}
+
+/*-----------------------------------------
+ THIRD CONTENT STYLING            
+-------------------------------------------*/
+.ThirdContent {
+  padding: 2rem;
+}
+.ThirdContent h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: initial;
+  color:#244230 ;
+}
+.Carousel {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex; 
+  aspect-ratio: 16/9;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3.5rem -0.75rem hsla(120, 50%, 25%, 1.0);
+  border-radius: .5rem;
+}
+
+.Carousel img {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;  
+  flex: 1 0 100%;
+  object-fit: cover;
+  
+}
+.carousel-item img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  transition: transform 0.3s;  
+  z-index: 1; 
+}
+
+.carousel-item:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1); 
+}
+
+
+/*-----------------------------------------
+ FOOTER CONTENT STYLING            
+-------------------------------------------*/
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #FEFDE0;
+  font-size: 24px;
+  background-color: #244230;
+  padding: 10px;
+}
+
+.Footer h3 {
+  font-size: 24px; 
+}
+
+/*FAILED SLIDER BUTTON STYLE*/
+/*
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.slider-nav a {
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  background-color: white;
+  opacity: .75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+  opacity: 1;
+}*/
